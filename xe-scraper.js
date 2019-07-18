@@ -17,13 +17,11 @@ const puppeteer = require('puppeteer');
 
     const data = await page.evaluate(() => {
         return {
-            fromAmount: document.querySelector('.converterresult-fromAmount').textContent,
-            fromCurrency: document.querySelector('.converterresult-fromCurrency').textContent,
             toAmount: document.querySelector('.converterresult-toAmount').textContent,
             toCurrency: document.querySelector('.converterresult-toCurrency').textContent
         };
     });
-    console.log(data.fromAmount + data.fromCurrency + ' = ' + data.toAmount + data.toCurrency);
+    console.log(AMOUNT + ' ' + FROM.toUpperCase() + ' = ' + data.toAmount + ' ' + data.toCurrency);
 
     await browser.close();
 })();
