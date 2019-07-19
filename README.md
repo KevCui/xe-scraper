@@ -1,26 +1,17 @@
-xe-scraper
-==========
+xe-cli
+======
 
-A [Puppeteer](https://github.com/GoogleChrome/puppeteer) script to scrape currency conversion data from [xe](https://www.xe.com/).
+A script to scrape currency conversion data from [xe](https://www.xe.com/).
 
 ### How to use
 
-- Install Puppeteer
-
 ```
-npm i puppeteer
-```
-
-- Change path of Chrome/Chromium in `xe-scraper.js`
-
-- Run command to fetch data
-
-```
-node xe-scraper.js <fromCurrency> <toCurrency> <Amount>
+Usage:
+  ./xe.sh <from_currency> <to_current> <ammount>
 ```
 
 Example: 100 EUR = ?USD
 
 ```
-node xe-scraper.js eur usd 100
+~$ ./xe.sh eur usd 100
 ```
