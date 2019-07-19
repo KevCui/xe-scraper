@@ -13,6 +13,7 @@ usage() {
 }
 
 set_args() {
+    _HOME_DIR=$(dirname "${BASH_SOURCE[0]}")
     _FROM_CURRENCY="${1:-}"
     _TO_CURRENCY="${2:-}"
     _AMOUNT="${3:-}"
@@ -24,9 +25,9 @@ set_command() {
     platform="$(uname -s)"
 
     if [[ "$platform" == *"inux"* ]]; then
-        _DECODER="./decoder-lin"
+        _DECODER="$_HOME_DIR/decoder-lin"
     elif [[ "$platform" == *"arwin"* ]]; then
-        _DECODER="./decoder-mac"
+        _DECODER="$_HOME_DIR/decoder-mac"
     else
         echo "OS not support!" && exit 1
     fi
