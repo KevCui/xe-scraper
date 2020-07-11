@@ -2,7 +2,7 @@
 
 > Fetch currency conversion data from [xe](https://www.xe.com/)
 
-### How to use
+## How to use
 
 ```
 Usage:
