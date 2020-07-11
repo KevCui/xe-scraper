@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Currency convert using xe
+# Currency convertion using xe
 #
 #/ Usage:
 #/   ./xe.sh <from_currency> <to_current> <ammount>
@@ -13,7 +13,6 @@ usage() {
 }
 
 set_args() {
-    _HOME_DIR=$(dirname "${BASH_SOURCE[0]}")
     _FROM_CURRENCY="${1:-}"
     _TO_CURRENCY="${2:-}"
     _AMOUNT="${3:-}"
