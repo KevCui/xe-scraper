@@ -1,7 +1,6 @@
-xe-cli
-======
+# xe-cli
 
-A script to scrape currency conversion data from [xe](https://www.xe.com/).
+> Fetch currency conversion data from [xe](https://www.xe.com/)
 
 ### How to use
 
@@ -12,6 +11,6 @@ Usage:
 
 Example: 100 EUR = ?USD
 
-```
+```bash
 ~$ ./xe.sh eur usd 100
 ```
